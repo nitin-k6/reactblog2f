@@ -23,7 +23,8 @@ const handleSubmit  = async(e) =>{
     data.append("file", file);
     newPost.photo = filename;
     try{
-    await axios.post("https://reactblog2b.onrender.com/upload" , data);
+   /* await axios.post("https://reactblog2b.onrender.com/upload" , data); */ 
+       await axios.post("http://localhost:3000/upload" , data);
     }catch(err){
 
     }
