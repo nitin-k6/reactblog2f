@@ -7,8 +7,8 @@ import { Context } from "../context/Context";
 
 
 export default function SinglePost() {
-   const PF = "https://reactblog2b.onrender.com/images/";        
-   /* const PF = "http://localhost:3000/images/"; */
+   /* const PF = "https://reactblog2b.onrender.com/images/"; */       
+ const PF = "http://localhost:3000/images/"; 
   const { user } = useContext(Context);
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
