@@ -9,7 +9,7 @@ export default function Login() {
    const [password, setPassword] =useState("")
    const [error, setError] = useState(false)
 
-   /*const handleSubmit = async (e) =>{
+   const handleSubmit = async (e) =>{
     e.preventDefault();
     setError(false);
     try{
@@ -22,28 +22,7 @@ export default function Login() {
     }catch(err){
        setError(true);
     }
-   }; */
-
-   const handleSubmit = async (e) => {
-  e.preventDefault();
-  setError(false);
-  try {
-    const res = await axios.post("https://reactblog2b.onrender.com/register", {
-      username,
-      email,
-      password,
-    });
-    // Check if registration was successful
-    if (res.status === 200) {
-      window.location.replace("https://reactblog2b.onrender.com/login");
-    } else {
-      setError(true);
-    }
-  } catch (err) {
-    setError(true);
-  }
-};
-
+   }; 
 
   return (
     <div className="register">
