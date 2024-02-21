@@ -33,7 +33,7 @@ const {user} = useContext(Context);
     <TopBar />
         <Routes>
           <Route exact path="/" element={user ?<Home/>: <Register/>} />
-          <Route path="/register" element={user ?<Login/> :<Register/>} />   
+          <Route path="/register" element={user ?<Home/> :<Register/>} />   
           <Route path="/login" element={user ? <Home/> :<Login/>} /> 
           <Route path="/write" element={user ? <Write/> : <Register/>} />
           <Route path="/settings" element={user ? <Settings/> : <Register/>} />
