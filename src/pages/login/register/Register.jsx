@@ -18,7 +18,7 @@ export default function Login() {
         email,
         password,
       });
-      res.data && window.location.replace("https://reactblog2b.onrender.com/login")
+      res.data && window.location.replace("/login")
     }catch(err){
        setError(true);
     }
@@ -35,7 +35,7 @@ export default function Login() {
     });
     // Check if registration was successful
     if (res.status === 200) {
-      window.location.replace("/login");
+      window.location.replace("https://reactblog2b.onrender.com/login");
     } else {
       setError(true);
     }
