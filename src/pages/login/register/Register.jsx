@@ -18,7 +18,7 @@ export default function Login() {
         email,
         password,
       });
-      res.data && window.location.replace("/login")
+      res.data && window.location.replace("https://reactblog2b.onrender.com/login")
     }catch(err){
        setError(true);
     }
